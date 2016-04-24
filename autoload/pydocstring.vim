@@ -179,6 +179,7 @@ function! pydocstring#insert()
     let lastpos = lastpos + 1
   endif
   silent! execute 'normal! ' . lastpos . 'G$'
+  silent! startinsert!
 
 endfunction
 
